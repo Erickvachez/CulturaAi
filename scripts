@@ -1,0 +1,13 @@
+document.getElementById('translateBtn').addEventListener('click', () => {
+  const text = document.getElementById('inputText').value.trim();
+  const lang = document.getElementById('languageSelect').value;
+
+  if (!text) {
+    alert('Please enter some text.');
+    return;
+  }
+
+  // Placeholder: call your AI translation + TTS backend
+  console.log(`Translate "${text}" to ${lang}.`);
+  alert(`This would translate "${text}" to ${lang} and play audio.`);
+});
